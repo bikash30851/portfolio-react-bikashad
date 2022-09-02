@@ -1,0 +1,121 @@
+.fbody{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.fcard{
+    position: relative;
+    width: 800px;
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.fcard .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.fcard .circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d83133;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+
+}
+.fcard:hover .circle:before {
+    background: orange;
+    clip-path: circle(400px at center);
+    
+}
+.fcard img {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 0.5s;
+
+}
+.fcard:hover img {
+    left: 90%;
+    height: 300px;
+}
+
+.fcard .content {
+    color: white;
+    position: relative;
+    width: 50%;
+    left: 5%;
+    padding: 20px 20px 20px 40px;
+    transform: 0.5s;
+    opacity: 1;
+}
+.fcard:hover .content{
+    left: 0;
+    opacity: 1;
+    color: #111;
+}
+.fcard .content h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+
+.fcard .content a {
+    position: relative;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    color: #111;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+@media(max-width: 991px){
+    .fcard{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    .fcard:hover{
+        height: 600px;
+    }
+    .fcard .content {
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+    .fcard:hover img {
+        top: 70%;
+        left: 50%;
+        height: 300px;
+
+    }
+}
+@media(max-width: 420px){
+    .fcard .content {
+        padding: 20px;
+    }
+
+}
