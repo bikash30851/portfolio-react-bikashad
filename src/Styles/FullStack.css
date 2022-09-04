@@ -36,6 +36,7 @@
     transition: 0.5s;
 
 }
+/*put this inside media(hover-hover) if problem */
 .fcard:hover .circle:before {
     background: orange;
     clip-path: circle(400px at center);
@@ -51,9 +52,18 @@
     transition: 0.5s;
 
 }
-.fcard:hover img {
-    left: 90%;
-    height: 300px;
+
+@media(hover:hover){
+    .fcard:hover img {
+        left: 90%;
+        height: 300px;
+    }
+    .fcard:hover .content{
+        left: 0;
+        opacity: 1;
+        color: #111;
+    }
+
 }
 
 .fcard .content {
@@ -65,11 +75,7 @@
     transform: 0.5s;
     opacity: 1;
 }
-.fcard:hover .content{
-    left: 0;
-    opacity: 1;
-    color: #111;
-}
+
 .fcard .content h2 {
     text-transform: uppercase;
     font-size: 2em;
@@ -98,19 +104,23 @@
         align-items: flex-start;
         margin: 10px;
     }
-    .fcard:hover{
+    .fcard {
         height: 600px;
     }
     .fcard .content {
         width: 100%;
         left: 0;
         padding: 30px;
+        color: #111;
     }
-    .fcard:hover img {
+    .fcard img {
         top: 70%;
         left: 50%;
         height: 300px;
 
+    }
+    .fcard {
+        background: orange;
     }
 }
 @media(max-width: 420px){
