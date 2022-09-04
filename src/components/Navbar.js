@@ -12,24 +12,13 @@ const Navbar = () => {
         document.body.classList.remove('nav-open')
     }
 
-    // const [data, setdata] = useState([])
-
-    // useEffect(() => {
-    //         fetch("https://api.countapi.xyz/hit/bikashad.vercel.app/e1c74273-67de-42c7-8fc8-7af5c298fe48")
-    //         .then((response) => response.json()).then(
-    //             (json) => {
-    //                 setdata(json);
-    //             } 
-    //         )
-    // }, [])
-
     const [data, setdata] = useState([]);
     const hasFetchedData = useRef(false);
 
     useEffect(() => {
         async function fetchData() {
         try {
-            await fetch('https://api.countapi.xyz/hit/bikashad.vercel.app/e1c74273-67de-42c7-8fc8-7af5c298fe48')
+            await fetch(`${process.env.REACT_APP_COUNT_API_URL_AND_KEY}`)
             .then((response) => response.json())
             .then((json) => setdata(json));
         } catch (e) {

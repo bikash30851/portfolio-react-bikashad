@@ -5,22 +5,21 @@
    
 }
 
-
-/* @media(max-width: 600px){
+@media(min-width: 200px) and (max-width: 600px) {
+    
     #tsparticles {
-        height: 200vh;
-
+        height: 120vh;
     }
-} */
+}
 
-/* @media(max-width: 580px){
-    .intro {
-        position: relative;
-    }
+@media(min-width: 600px) { 
     #tsparticles {
-        height: 182vh;
+        height: 100vh;
     }
-} */
+}
+
+
+
 
 
 .intro {
