@@ -18,7 +18,7 @@ const Navbar = () => {
     useEffect(() => {
         async function fetchData() {
         try {
-            await fetch(`${process.env.REACT_APP_COUNT_API_URL_AND_KEY}`)
+            await fetch(`https://api.countapi.xyz/hit/bikashad.vercel.app/${process.env.REACT_APP_COUNT_API_KEY}`)
             .then((response) => response.json())
             .then((json) => setdata(json));
         } catch (e) {
