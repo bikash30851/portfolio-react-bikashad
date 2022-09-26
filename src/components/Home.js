@@ -3,6 +3,7 @@ import image from '../assets/wbearcat.png'
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import '../Styles/HomeStyle.css'
+import "../Styles/ItemStyle.css"
 
 const Home = () => {
 

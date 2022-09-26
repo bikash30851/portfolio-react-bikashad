@@ -16,10 +16,11 @@ const Academia = () => {
         <div style={{fontSize:"90%"}} className='container'>
             <div  className='card'>
                 <div className='card-image card-1'></div>
-                <h2 >Projects</h2>
+                <h2 >Data</h2>
                 <p>
-                    Explore Projects ranging from Machine Learning, Student Attendance Tracking System and many more 
-                    personal projects that I have worked on over the years.
+                    Machine Learning project where I analyzed a cryptocurrency dataset, cleaned unstructured data
+                    and applied classification models and algorithms. Explore Project Code and Poster.
+                    
                 </p>
                 <Link className='card-a' to={`/card-bitcoin`}> READ MORE </Link>
                 {/* <a href=''>READ MORE</a> */}
@@ -28,8 +29,8 @@ const Academia = () => {
                 <div className='card-image card-2'></div>
                 <h2>Apps</h2>
                 <p>
-                    A range of IOS applications like Bookworm, search and resume app designed and built during the 
-                    first year of grad school. Code can be found on my github.
+                    A range of IOS applications like Bookworm, search and resume app. Student Attendance Tracking
+                    System Android Application. Explore the app functionality and code on my github.
                 </p>
                 <Link className='card-a' to={`/card-apps`}> READ MORE </Link>
                 {/* <a href=''>READ MORE</a> */}

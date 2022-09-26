@@ -1,16 +1,32 @@
+/*Individual Portfolio Item Styles*/
+.portfolio__item--individual{
+    padding: 4em 3em 2em;
+    margin: auto;
+}
 
-.intro {
+.item__main--image {
+    width: auto;
+    height: 350px;
+}
+
+/*Bitcoin Page*/
+.hyperlink {
+    list-style: none;
+}
+
+/*Styling for 4 project cards.*/
+.itemintro {
     position: relative;
     top: 0;
     left:0;
 }
 
-.intro__img {
+.itemintro__img {
     box-shadow: var(--bs);
 }
 
 @media (min-width: 600px) {
-    .intro {
+    .itemintro {
         display:grid;
         grid-column-gap: 1em;
         width: min-content;
@@ -21,14 +37,14 @@
         grid-template-columns: min-content max-content ;
     }
 
-    .intro__img {
+    .itemintro__img {
         grid-area: img;
         min-width: 250px;
         position: relative;
         z-index: 3;
     }
 
-    .section__subtitle--intro {
+    .itemsection__subtitle--intro {
         align-self: start;
         grid-column: -1/1;
         grid-row: 2;
@@ -41,28 +57,64 @@
     }
 }
 
-/*Individual Portfolio Item Styles*/
-.portfolio__item--individual{
-    padding: 0 4em 2em;
-    margin: 0 auto;
+/*Typography for section title and subtitle*/
+
+.itemsection__title {
+    margin-bottom: .25em;
 }
 
-.item__main--image {
-    width: auto;
-    height: 400px;
+.itemsection__title--intro {
+    font-weight: var(--fw-reg);
+    z-index:2;
+}
+.itemsection__title--intro strong {
+    display: block;
 }
 
-/*Bitcoin Page*/
-.hyperlink {
-    list-style: none;
+.itemsection__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}  
+
+.itemsection__subtitle--intro {
+    background: var(--clr-accent);
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
 }
 
-
-
-
-
-
-
-
-
-
+.pdfcontainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+  @media (max-width: 600px) {
+    .pdfcontainer {
+        display: none;
+    }
+  
+  }
+  
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  @media (min-width: 850px){
+    .flexbox{
+        display: flex;
+      }
+      .flexTextR{
+        margin-left:10px;
+      }
+      .flexTextL{
+        margin-right:10px;
+      }
+  }
+  

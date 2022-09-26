@@ -1,17 +1,20 @@
 import React from 'react'
 //import bitcoin from '../assets/bitcoin.png'
 import image from '../assets/image4.png'
+import ajr from '../assets/ajr.png'
+
+
 
 const SAC = () => {
   return (
     <div>
-        <section className="intro">
-        <h1 className="section__title section__title--intro">
-            AJR Concert <strong>Student Activites Council</strong>
-        </h1>
-        <p className="section__subtitle section__subtitle--intro">Northwest Missouri State University</p>
-        <img src={image} alt="Naca Live alt" className = "intro__img"/>
-    </section>
+        <section className="itemintro">
+            <h1 className="itemsection__title itemsection__title--intro">
+                AJR Concert <strong>Student Activites Council</strong>
+            </h1>
+            <p className="itemsection__subtitle itemsection__subtitle--intro">Northwest Missouri State University</p>
+            <img src={ajr} alt="AJR alt" className = "itemintro__img"/>
+        </section>
 
     <div className="portfolio__item--individual">
         <p>As a Graduate Assistant(GA) of the Student Activities Council, it was an honor to host the popular
@@ -19,7 +22,7 @@ const SAC = () => {
             and helped put together an army of student volunteers, who helped set up the stage, provide hospitatlity to 
             the artists and put on the greatest show for the Bearcats. 
         </p>
-        <img src={image} alt=""/>
+        <img src={image} alt="" className="item__main--image"/>
         <p>
             The Student Activities Council (SAC) at Northwest Missouri State University has announced it will welcome AJR to the campus as the headliner of its spring concert with Careless Vibez joining the event as the opening act.  
 

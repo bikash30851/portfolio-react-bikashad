@@ -14,7 +14,7 @@ const FullStackAndBusinessWebsite = () => {
                  JAVA Springboot backend, React frontend and MySQL database to store employee details. 
                  This app implements all the CRUD functionalities and makes use of Springboot REST API and AXIOS.
                 </p>
-                <a href='https://react-frontend-fullstack.herokuapp.com/' target="_blank" rel="noopener noreferrer"> Visit App</a>
+                <a href='https://react-frontend-fullstack.herokuapp.com/employees' target="_blank" rel="noopener noreferrer"> Visit App</a>
 
             </div>
         </div>

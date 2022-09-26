@@ -4,46 +4,79 @@ import search from '../assets/search.png'
 const IOS = () => {
   return (
     <div>
-        <section className="intro">
-        <h1 className="section__title section__title--intro">
-            iOS Project <strong>Search App</strong>
-        </h1>
-        <p className="section__subtitle section__subtitle--intro">Written In Swift</p>
-        <img src={search} alt="iOS Search App alt" className="intro__img"/>
-    </section>
+        {/* <section className="intro">
+            <h1 className="section__title section__title--intro">
+                iOS Project <strong>Search App</strong>
+            </h1>
+            <p className="section__subtitle section__subtitle--intro">Written In Swift</p>
+            <img src={search} alt="iOS Search App alt" className="intro__img"/>
+        </section> */}
+
+        <section className="itemintro">
+            <h1 className="itemsection__title itemsection__title--intro">
+                iOS and Android<strong>Mobile Applications</strong>
+            </h1>
+            <p className="itemsection__subtitle itemsection__subtitle--intro">Written In Java and Swift</p>
+            <img src={search} alt="iOS Search App alt" className = "itemintro__img"/>
+        </section>
 
     <div className="portfolio__item--individual">
         <p>
-            This is a search application that allows the users to search for specific text and if the database
-            has items pertaining to this search, it will be displayed in the screen. I have designed a user
-            friendly interface, where a user could type the text that they wish to search and obtain results based
-            on it. Although the data could be stored in a database like firebaset, here it is simply stored in an array
-            of arrays. Because of the capacity restriction, there are only 5 alts pertaining to
-            each search. If the text entered by the user matches the topic of the item stored in the array, it is
-            displayed in the screen and user has the ability to view next or previous alts.
+            I have developed multiple iOS and Android mobile applications. These application are built on
+            Swift and JAVA programming languages using XCode and Android Studio IDE. All of the mobile applications
+            that I have built are hosted on my github. Two of the favorite applications that I have built are the 
+            iOS Bookworm application and the Android Student Attendance Tracking System Application. 
+        </p>
+        <ol>
+            <li>iOS Bookworm Application</li>
+            <li>Student Attendance Tracting Android Application</li>
+        </ol>
+        <h3>1. iOS Bookworm Application</h3>
+        <a href="https://github.com/bikash30851/ios-bookworm-app" target="_blank" rel="noopener noreferrer">
+                    <button type="button" className="btn btn-success" style={{padding:"10px", margin:"25px"}}>Code Repository</button>
+        </a>
+        <div className='flexbox'>
+            <div className='flexTextL'>
+                <p>
+                    The iOS Bookworm application comprises of 6 total screens/views. The first screen is a landing page where users can login in
+                    with a user ID and password that is registered with the database of the application. If the users do not have an account, 
+                    they will be prompted to create a new account by registering. In the next screen a TabBarController is implemented with
+                    three tab bar items, Home, Books and the Wishlist/recommendation tab. 
+                </p>
+                <h3>Segues</h3>
+                <ol>
+                    <li>Home: Pressing the Home button segues the user to a screen with their user profile information and other general settings. 
+                        Home page also has a button to log out.
+                    </li>
+                    <li>Books: Pressing the Books button segues the user into a table-view with all the 10 books that are present in the database 
+                        of the application. 
+                    </li>
+                    <li>
+                        Wishlist: The Wishlist button segues the user to recommend/Wishlist a book by entering the name of the book and its title. 
+                    </li>
+                </ol>
+            </div>
+            <img src={search} alt="iOS Search App alt" className="item__main--image"/>
+        </div>
+    
+        <p>
+            The book screen has a table-view with the list of all the books available and when the user selects a book from the table view, 
+            it will segue into a page where they will be able to read the pdf version of the book that is available. The scroll for the table
+            view is vertical and the reading page also has a vertical scroll. 
+        </p>
 
-        </p>
-        <img src={search} alt="iOS Search App alt" className="item__main--alt"/>
+
+        <h3>2. Student Attendance Tracking Android Application</h3>
+        <a href="https://github.com/bikash30851" target="_blank" rel="noopener noreferrer">
+                    <button type="button" className="btn btn-success" style={{padding:"10px", margin:"25px"}}>Code Repository</button>
+        </a>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada luctus mauris eu luctus.
-            Aenean cursus ut tellus a luctus. Quisque non diam a tellus vehicula pellentesque. Aliquam tincidunt
-            pulvinar purus, vel vestibulum magna rutrum vel. Curabitur fringilla neque tincidunt velit interdum
-            facilisis. Aenean lacinia pharetra pharetra. Nunc lobortis velit sed enim condimentum, nec cursus
-            tortor vehicula. Maecenas eget diam at leo tempus sodales. Nam id dolor euismod velit iaculis
-            rutrum. Nam convallis fermentum suscipit. Quisque hendrerit ligula elementum, egestas urna non,
-            tincidunt risus. Suspendisse pellentesque eros id maximus pharetra. Suspendisse augue velit, luctus
-            sit amet enim eu, fringilla porttitor lectus.
+            This application is under rigorous construction and should be ready by December 2022. Please check back
+            for updates.
         </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada luctus mauris eu luctus.
-            Aenean cursus ut tellus a luctus. Quisque non diam a tellus vehicula pellentesque. Aliquam tincidunt
-            pulvinar purus, vel vestibulum magna rutrum vel. Curabitur fringilla neque tincidunt velit interdum
-            facilisis. Aenean lacinia pharetra pharetra. Nunc lobortis velit sed enim condimentum, nec cursus
-            tortor vehicula. Maecenas eget diam at leo tempus sodales. Nam id dolor euismod velit iaculis
-            rutrum. Nam convallis fermentum suscipit. Quisque hendrerit ligula elementum, egestas urna non,
-            tincidunt risus. Suspendisse pellentesque eros id maximus pharetra. Suspendisse augue velit, luctus
-            sit amet enim eu, fringilla porttitor lectus.
-        </p>
+
+
+
     </div>
 
 

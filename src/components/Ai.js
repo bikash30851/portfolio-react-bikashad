@@ -4,13 +4,13 @@ import ai from "../assets/ai.png"
 const Ai = () => {
   return (
     <div>
-        <section className="intro">
-        <h1 class="section__title section__title--intro">
+         <section className="itemintro">
+            <h1 className="itemsection__title itemsection__title--intro">
             Reinforcement Learning <strong>Grid Environment</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">Value Iteration using Python</p>
-        <img src={ai} alt="Naca Live alt" class = "intro__img"/>
-    </section>
+            </h1>
+            <p className="itemsection__subtitle itemsection__subtitle--intro">Value Iteration using Python</p>
+            <img src={ai} alt="AI alt" className = "itemintro__img"/>
+        </section>
 
     <div class="portfolio__item--individual">
         <p>When you try to get your hands on reinforcement learning, it is likely that Grid World Game is the very 
@@ -19,7 +19,7 @@ const Ai = () => {
             learning. Meanwhile, it is super fun to implement your own game and see how a robot manage to learn on 
             its own!
         </p>
-        <img src={ai} alt=""/>
+        <img src={ai} alt="" className="item__main--image"/>
         <p>
             The rule is simple. Your agent/robot starts at the left-bottom corner(the ‘start’ sign) and
              ends at either +1 or -1 which is the corresponding reward. At each step, the agent has 4 possible
